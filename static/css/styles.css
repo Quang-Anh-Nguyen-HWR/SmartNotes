@@ -1,0 +1,35 @@
+.custom-navbar {
+  background-color: white; 
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.custom-navbar a {
+  color: #42BCB4 !important; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-navbar .nav-pills .nav-link {
+  color:  #42BCB4; 
+  border-radius: 5px;
+}
+
+.custom-navbar .nav-pills .nav-link.active {
+  background-color: #42BCB4 !important; 
+  color: white !important;
+}
+
+.section {
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+#erster_abschnitt {
+  background: linear-gradient(135deg, #2E3192, #1BFFFF); 
+  color: white;
+}
