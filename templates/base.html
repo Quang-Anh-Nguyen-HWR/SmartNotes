@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <style>
+    html {
+        scroll-behavior: smooth;
+        
+    }
+    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
@@ -10,7 +16,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example" tabindex="0">
 
     <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -22,8 +28,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#features">Funktionen</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#abschnitt1">Start</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#abschnitt2">Unsere App</a></li>
                     <li class="nav-item"><a class="nav-link" href="#pricing">Preise</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Unsere Partner</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Über Uns</a></li>
@@ -32,27 +38,74 @@
             </div>
     </nav>
 
-    <section id="erster_abschnitt" class="section full-height d-flex align-items-center text-center">
+    <section id="abschnitt1" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
         <div class="container">
         <div class="row align-items-center">
             
             <div class="col-lg-6 text-start">
-                <h1>Die schlauste Notizen-App</h1>
+                <h1>Die smarteste Notizen-App, <br> die es gibt!</h1>
                 <p>Downloade die App jetzt</p>
                 <button class="btn btn-dark">App Store</button>
                 <button class="btn btn-dark">Google Play</button>
+                <button class="btn btn-dark">Windows</button>
+                <button class="btn btn-dark">OSX</button>
             </div>
 
             
             <div class="col-lg-6 text-center">
-                <img src="{{ url_for('static', filename='pictures/demo_2.png') }}" 
-                     alt="SmartNotes App" 
+                <img src="{{ url_for('static', filename='pictures/app_logo.png') }}" 
+                     alt="Dieses Bild konnte nicht geladen werden." 
                      class="img-fluid" 
-                     style="max-width: 100%; height: auto;">
+                     style="max-width: 120%; height: auto;">
             </div>
         </div>
-    </div>
+        </div>
     </section>
+
+    <section id="abschnitt2" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h2>Notizen erstellen und direkt damit lernen.</h2>
+                <p>Mit SmartNotes wollen wir die Art, wie du Notizen machst und nutzt, komplett neu denken. Es geht nicht nur darum, Gedanken festzuhalten – sondern sie direkt fürs Lernen zu nutzen. Einfach, intuitiv und effektiv. Weil Lernen smarter geht. Work smart, not hard!</p>
+            </div>
+        
+            <div class="col-md-8">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='pictures/demo_1.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_2.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_3.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_4.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_5.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_6.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="{{ url_for('static', filename='pictures/demo_7.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only"></span>
+                </a>
+                </div>
+                </div>
+        </div>
+    </section>   
 
     <div class = "container">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
