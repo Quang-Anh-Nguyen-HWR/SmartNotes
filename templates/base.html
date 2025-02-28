@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link me-4" href="#Unsere_App">Unsere App</a></li>
                     <li class="nav-item"><a class="nav-link me-4" href="#Funktionen">Funktionen</a></li>
                     <li class="nav-item"><a class="nav-link me-4" href="#Unsere_Partner">Unsere Partner</a></li>
-                    <li class="nav-item"><a class="nav-link me-4" href="#pricing">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#Rezensionen">Feedback</a></li>
                     <li class="nav-item"><a class="nav-link me-4" href="#contact">Über Uns</a></li>
                     <li class="nav-item"><a class="nav-link me-4" href="#contact">Feedback</a></li>
                 </ul>
@@ -177,7 +177,7 @@
                 <div class="Funktionenbox">
                 <a href="https://www.hwr-berlin.de/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style = "font-size: 30px; !important">
-                    <img src="{{ url_for('static', filename='pictures/partner_1.png') }}" alt="Notizen" style="width: 80px; height: auto; margin-bottom: 10px;"> <br>
+                    <img src="{{ url_for('static', filename='pictures/partner_1.png') }}" alt="Notizen" style="width: 120px; height: auto; margin-bottom: 20px;"> <br>
                     HWR Berlin
                     </h4>
                 </a>
@@ -187,7 +187,7 @@
                 <div class="Funktionenbox">
                 <a href="https://www.htw-berlin.de/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style = "font-size: 30px; !important">
-                    <img src="{{ url_for('static', filename='pictures/partner_2.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"> <br>
+                    <img src="{{ url_for('static', filename='pictures/partner_2.png') }}" alt="Notizen" style="width: 120px; height: auto;margin-bottom: 20px;"> <br>
                     HTW Berlin
                     </h4>
                 </a>
@@ -197,7 +197,7 @@
                 <div class="Funktionenbox">
                 <a href="https://simpleclub.com/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style = "font-size: 30px; !important">
-                    <img src="{{ url_for('static', filename='pictures/partner_4.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 8px;"><br> 
+                    <img src="{{ url_for('static', filename='pictures/partner_4.png') }}" alt="Notizen" style="width: 120px; height: auto;margin-bottom: 20px;"><br> 
                     SimpleClub
                     </h4>
                 </a>
@@ -207,7 +207,7 @@
                 <div class="Funktionenbox">
                 <a href="https://www.coursera.org" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style = "font-size: 30px; !important">
-                    <img src="{{ url_for('static', filename='pictures/partner_3.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"><br> 
+                    <img src="{{ url_for('static', filename='pictures/partner_3.png') }}" alt="Notizen" style="width: 120px; height: auto;margin-bottom: 20px;"><br> 
                     Coursera
                     </h4>
                 </a>
@@ -217,7 +217,7 @@
                 <div class="Funktionenbox">
                 <a href="https://openai.com/" target="_blank" style="text-decoration: none; color: inherit;">
                     <h4 style = "font-size: 30px; !important"> 
-                    <img src="{{ url_for('static', filename='pictures/partner_5.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"> <br>
+                    <img src="{{ url_for('static', filename='pictures/partner_5.png') }}" alt="Notizen" style="width: 120px; height: auto;margin-bottom: 20px;"> <br>
                     OpenAI
                     </h4>
                 </a>
@@ -227,6 +227,124 @@
         </div>
     </div>
     </section>
+
+    <section id="Rezensionen" class="section">
+    <div class=" text-start">
+
+        <div class="container-fluid px-4">
+        <div class="row d-flex justify-content-center text-center flex-wrap luecke  align-items-center">
+            <div class="col-md-5">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/rezension_1.png') }}" alt="Notizen" style="width: 200px; height: auto; margin-bottom: 30px; border-radius:50%"> <br> 
+                    Tom Schmidt (Student) 
+                    </h4>
+                    <h5><br>"Smart Notes hat mir echt geholfen, meine Notizen zu organisieren und schneller zu lernen - die KI ist super praktisch!"</h5>
+                    <img src="{{ url_for('static', filename='pictures/icon_6.png') }}" alt="Notizen" style="width: 200px; height: auto;margin-bottom: 10px;">
+                </a>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="Funktionenbox">
+                    <h4 style = "font-size: 30px; !important">
+                    <img src="{{ url_for('static', filename='pictures/rezension_2.png') }}" alt="Notizen" style="width: 200px; height: auto;margin-bottom: 30px;"> <br>
+                    Handelsblatt
+                    </h4>
+                    <h5><br>„Smart Notes ist ein aufstrebendes Unternehmen, das mit KI und smarter Organisation das Lernen revolutioniert.“</p>
+                    <img src="{{ url_for('static', filename='pictures/icon_6.png') }}" alt="Notizen" style="width: 200px; height: auto;margin-bottom: 10px;">
+                </a>
+                </div>
+            </div>
+        
+        </div>
+        </div>
+    </div>
+    </section>
+
+<section id="Preise" class="section py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Unsere Preise</h2>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Basic Plan -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Basic</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CHF <span style="font-size: 40px;">990</span></h5>
+                        <p class="text-muted">/ einmalig</p>
+                        <ul class="list-unstyled">
+                            <li>✔️ bis zu 3 Seiten</li>
+                            <li>✔️ on Site SEO</li>
+                            <li>✔️ 1 Benutzer</li>
+                            <li>✔️ 1 E-Mail Postfach</li>
+                            <li>✔️ Hosting: 49 CHF / Jahr</li>
+                            <li>✔️ Gratis SSL Zertifikat</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Angebot anfordern</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        *kostenpflichtige Zusatzmodule exkl.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optimal Plan -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-lg border-primary">
+                    <div class="card-header bg-primary text-white position-relative">
+                        <h4 class="mb-0">Optimal</h4>
+                        <span class="badge bg-success position-absolute top-0 start-50 translate-middle">BELIEBTESTE</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CHF <span style="font-size: 40px;">1490</span></h5>
+                        <p class="text-muted">/ einmalig</p>
+                        <ul class="list-unstyled">
+                            <li>✔️ bis zu 10 Seiten</li>
+                            <li>✔️ on Site SEO</li>
+                            <li>✔️ bis zu 10 Benutzer</li>
+                            <li>✔️ 1 E-Mail Postfach</li>
+                            <li>✔️ Hosting: 49 CHF / Jahr</li>
+                            <li>✔️ Einschulung ins CMS</li>
+                            <li>✔️ Gratis SSL Zertifikat</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Angebot anfordern</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        *kostenpflichtige Zusatzmodule exkl.
+                    </div>
+                </div>
+            </div>
+
+            <!-- E-Commerce Plan -->
+            <div class="col">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">E-Commerce</h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">CHF <span style="font-size: 40px;">2990</span></h5>
+                        <p class="text-muted">/ einmalig</p>
+                        <ul class="list-unstyled">
+                            <li>✔️ Alle Features von Optimal</li>
+                            <li>✔️ off Site SEO Einschulung</li>
+                            <li>✔️ Einschulung ins CMS</li>
+                            <li>✔️ E-Shop (20 Produkte)</li>
+                            <li>✔️ Neues Firmen Logo</li>
+                            <li>✔️ SSL ab 199 CHF</li>
+                        </ul>
+                        <a href="#" class="btn btn-outline-primary">Angebot anfordern</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        *kostenpflichtige Zusatzmodule exkl.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <div class = "container">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

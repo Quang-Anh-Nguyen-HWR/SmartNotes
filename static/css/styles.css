@@ -41,6 +41,14 @@
   text-align: center;
 }
 
+#Rezensionen {
+  background: linear-gradient(135deg, #1f3542, #1399f9); 
+  color: white;
+}
+.luecke{
+gap: 60px !important;
+}
+
 body, html {
   margin: 0;
   padding: 0;
