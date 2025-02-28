@@ -91,7 +91,7 @@ Die Website soll den Nutzern unsere App vorstellen. Wir übernehmen viele Inhalt
      ```
    → Die Website ist unter http://127.0.0.1:5000 erreichbar
 
-Falls irgendwas nicht klappen sollte, können Sie uns einfach direkt kontaktieren oder unter: https://hwrberlin.github.io/fswd/python-vscode.html (vgl. Prof. Dr. Alexander Eck 2024) eine detailierte Anleitung für das VSC Setup finden.
+Falls irgendwas nicht klappen sollte, können Sie uns einfach direkt kontaktieren oder unter: https://hwrberlin.github.io/fswd/python-vscode.html (Prof. Dr. Alexander Eck 2024) eine detailierte Anleitung für das VSC Setup finden.
 
 ---
 ## Quellen
