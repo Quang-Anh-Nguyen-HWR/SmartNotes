@@ -1,7 +1,7 @@
 # SmartNotes  
 **E-Business Idee: SmartNotes**  
 
-**Studenten:**  
+Studenten:
 - Le Chau Anh Do  
 - Quang Anh Nguyen  
 
@@ -19,7 +19,7 @@ Unsere Website besteht insgesamt aus 7 Abschnitten:
 - Kontakt
 - (Abschluss)
 
-Die Website soll den Nutzern unsere App vorstellen. Wir übernehmen viele Inhalte aus unserer **Präsentation und dem Lean Canvas**, ergänzen aber auch noch weitere Inhalte, die uns sinnvoll erscheinen.  
+Die Website soll den Nutzern unsere App vorstellen. Wir übernehmen viele Inhalte aus unserer Präsentation und dem Lean Canvas, ergänzen aber auch noch weitere Inhalte, die uns sinnvoll erscheinen.  
 
 ---
 
@@ -56,7 +56,44 @@ Die Website soll den Nutzern unsere App vorstellen. Wir übernehmen viele Inhalt
 - Außerdem gibt es eine untere Leiste mit Impressum, AGB und Datenschutz.  
 
 ---
+## Website lokal starten
 
+### Installationen
+1. Python installieren (https://www.python.org/downloads/)
+2. VS Code installieren (https://code.visualstudio.com/)
+3. Projekt abrufen:
+   - Option 1: Ordner `smartnotes` abspeichern und in VS Code öffnen
+   - Option 2: Repo von GitHub klonen (Git erforderlich: https://git-scm.com/downloads)
+
+### Projekt in VS Code starten
+1. Projektordner `smartnotes` in VS Code öffnen
+2. Terminal öffnen: `Strg + Shift + P` → `Terminal: Create New Terminal`
+3. Virtuelle Umgebung erstellen:
+   ```sh
+   python -m venv venv
+   ```
+   → Es sollte ein Ordner `/venv` erscheinen
+4. Virtuelle Umgebung aktivieren:
+     ```sh
+     venv\Scripts\activate
+     ```
+   → Das Terminal sollte nun mit `(venv)` beginnen. Falls nicht, kann man die Seite nicht starten.
+5. Python-Interpreter auswählen (optional, falls nötig):
+   `Strg + Shift + P` → `Python: Select Interpreter` → `/venv` auswählen
+6. Abhängigkeiten installieren:
+   ```sh
+   pip install -r requirements.txt
+   ```
+7. Flask-App  starten:
+   - Danach die Anwendung starten:
+     ```sh
+     flask run
+     ```
+   → Die Website ist unter http://127.0.0.1:5000 erreichbar
+
+Falls irgendwas nicht klappen sollte, können Sie uns einfach direkt kontaktieren oder unter: https://hwrberlin.github.io/fswd/python-vscode.html (vgl. Prof. Dr. Alexander Eck 2024) eine detailierte Anleitung für das VSC Setup finden.
+
+---
 ## Quellen
 
 Alle Quellen wurden zuletzt abgerufen am 28.02.2025
