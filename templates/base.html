@@ -4,7 +4,7 @@
     <style>
     html {
         scroll-behavior: smooth;
-        
+        scroll-padding-top: 85px;
     }
     </style>
     <meta charset="utf-8">
@@ -28,23 +28,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#abschnitt1">Start</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#abschnitt2">Unsere App</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#pricing">Preise</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Unsere Partner</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Über Uns</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link active me-4" href="#Start">Start</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#Unsere_App">Unsere App</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#Funktionen">Funktionen</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#Unsere_Partner">Unsere Partner</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#pricing">Feedback</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#contact">Über Uns</a></li>
+                    <li class="nav-item"><a class="nav-link me-4" href="#contact">Feedback</a></li>
                 </ul>
             </div>
     </nav>
 
-    <section id="abschnitt1" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
+    <section id="Start" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
         <div class="container">
         <div class="row align-items-center">
             
             <div class="col-lg-6 text-start">
-                <h1>Die smarteste Notizen-App, <br> die es gibt!</h1>
-                <p>Downloade die App jetzt</p>
+                <h1>Die einzige Notizen-App,<br>die mitdenkt.</h1>
+                <p>Jetzt die App herunterladen.</p>
                 <button class="btn btn-dark">App Store</button>
                 <button class="btn btn-dark">Google Play</button>
                 <button class="btn btn-dark">Windows</button>
@@ -62,7 +63,8 @@
         </div>
     </section>
 
-    <section id="abschnitt2" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
+    <section id="Unsere_App" class="section full-height d-flex align-items-center text-center" style="padding-top: 80px;">
+        <div class="container-fluid px-5">
         <div class="row align-items-center">
             <div class="col-md-4">
                 <h2>Notizen erstellen und direkt damit lernen.</h2>
@@ -73,7 +75,7 @@
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="{{ url_for('static', filename='pictures/demo_1.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
+                    <img src="{{ url_for('static', filename='pictures/demo_11.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
                     </div>
                     <div class="carousel-item">
                     <img src="{{ url_for('static', filename='pictures/demo_2.png') }}" class="d-block carousel-img" alt="Bild konnte nicht geladn werden.">
@@ -105,7 +107,126 @@
                 </div>
                 </div>
         </div>
+        </div>
     </section>   
+
+    <section id="Funktionen" class="section">
+    <div class=" text-start">
+        
+        <h2 style= "margin-left: 65px; font-size: 40px;">Funktionen</h2>
+        <p style="margin-left: 65px; margin-bottom: 100px;" >Unsere wichtigsten Features im Überblick.</p>
+
+        <div class="container-fluid px-5 row row-cols-5 g-4 justify-content-center">
+            <div class="col-md-4">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/icon_1.png') }}" alt="Notizen" style="width: 40px; height: auto; filter: invert(100%); margin-bottom: 10px;"> <br>
+                    Notizenerstellung
+                    </h4>
+                    <p>Hand- und Tastaturnotizen in einer App</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/icon_2.png') }}" alt="Notizen" style="width: 40px; height: auto; filter: invert(100%);margin-bottom: 10px;"> <br>
+                    KI-basiertes Lernen
+                    </h4>
+                    <p>Automatische Zusammenfassungen und Karteikarten</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/icon_3.png') }}" alt="Notizen" style="width: 40px; height: auto; filter: invert(100%);margin-bottom: 8px;"><br> 
+                    Filemanager & Organisation
+                    </h4>
+                    <p> Strukturierte Ablage von Lernmaterialien</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/icon_4.png') }}" alt="Notizen" style="width: 40px; height: auto; filter: invert(100%);margin-bottom: 10px;"><br> 
+                    Cloud-Speicherung
+                    </h4>
+                    <p>Zugriff auf deine Notizen von überall</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="Funktionenbox">
+                    <h4>
+                    <img src="{{ url_for('static', filename='pictures/icon_5.png') }}" alt="Notizen" style="width: 40px; height: auto; filter: invert(100%);margin-bottom: 10px;"> <br>
+                    Lernstatistiken & Fortschrittskontrolle
+                    </h4>
+                    <p>Individuelle Schwachstellen erkennen</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+    <section id="Unsere_Partner" class="section">
+    <div class=" text-start">
+        
+        <h2 style= "text-align: center; font-size: 45px; margin-bottom: 70px">Unsere Partner</h2>
+
+        <div class="container-fluid px-4">
+        <div class="row d-flex justify-content-center text-center flex-nowrap">
+            <div class="col-md-3">
+                <div class="Funktionenbox">
+                <a href="https://www.hwr-berlin.de/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style = "font-size: 30px; !important">
+                    <img src="{{ url_for('static', filename='pictures/partner_1.png') }}" alt="Notizen" style="width: 80px; height: auto; margin-bottom: 10px;"> <br>
+                    HWR Berlin
+                    </h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Funktionenbox">
+                <a href="https://www.htw-berlin.de/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style = "font-size: 30px; !important">
+                    <img src="{{ url_for('static', filename='pictures/partner_2.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"> <br>
+                    HTW Berlin
+                    </h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Funktionenbox">
+                <a href="https://simpleclub.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style = "font-size: 30px; !important">
+                    <img src="{{ url_for('static', filename='pictures/partner_4.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 8px;"><br> 
+                    SimpleClub
+                    </h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Funktionenbox">
+                <a href="https://www.coursera.org" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style = "font-size: 30px; !important">
+                    <img src="{{ url_for('static', filename='pictures/partner_3.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"><br> 
+                    Coursera
+                    </h4>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="Funktionenbox">
+                <a href="https://openai.com/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <h4 style = "font-size: 30px; !important"> 
+                    <img src="{{ url_for('static', filename='pictures/partner_5.png') }}" alt="Notizen" style="width: 80px; height: auto;margin-bottom: 10px;"> <br>
+                    OpenAI
+                    </h4>
+                </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
 
     <div class = "container">
     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

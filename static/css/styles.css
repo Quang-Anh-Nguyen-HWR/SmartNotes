@@ -5,23 +5,14 @@
 }
 
 .custom-navbar a {
-  color: #42BCB4 !important; 
+  color: white !important; 
   text-decoration: none;
   font-weight: bold;
 }
 
-.custom-navbar .nav-pills .nav-link {
-  color:  #42BCB4; 
-  border-radius: 0px;
-}
-
-.custom-navbar .nav-pills .nav-link.active {
-  background-color: #42BCB4 !important; 
-  color: white !important;
-}
 
 .section {
-  height: 100vh; 
+  height: auto; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,19 +20,25 @@
   padding: 60px 20px;
 }
 
-#abschnitt1 {
+#Start {
   background: linear-gradient(135deg, #2E3192, #1BFFFF); 
   color: white;
 }
 
-#abschnitt2 {
+#Unsere_App {
   background: white; 
   color: black;
 }
 
-#abschnitt1 {
-  background: linear-gradient(135deg, #2E3192, #1BFFFF); 
+#Funktionen {
+  background: linear-gradient(135deg, #1f4d49, #4be3d9); 
   color: white;
+}
+
+.Funktionenbox {
+  margin: 30px; 
+  padding: 20px;
+  text-align: center;
 }
 
 body, html {
