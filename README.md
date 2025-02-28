@@ -116,8 +116,8 @@ Alle Quellen wurden zuletzt abgerufen am 28.02.2025
 - Das Logo wurde AI generiert.
   - Iconik AI (2025): https://www.iconikai.com/
 
--  Icons
-  - Flaticon (2025): https://www.flaticon.com/ 
+- Icons
+   - Flaticon (2025): https://www.flaticon.com/ 
 
 - Restliche Bilder
   - HWR Logo: https://www.facebook.com/officialHWRBerlin/
@@ -127,6 +127,8 @@ Alle Quellen wurden zuletzt abgerufen am 28.02.2025
   - Open Ai Logo: https://www.vecteezy.com/png/22227364-openai-chatgpt-logo-icon
   - Tom Schmidt: https://www.motortrend.com/features/celebrity-drive-justin-reiter-snowboarder/
   - Handelblatt Logo: https://www.facebook.com/handelsblatt/photos/a.445462238232/10157577862603233/?type=3
+
+- Texte und Slogans wurden teilweise mit Hilfe von ChatGPT erstellt
  
 
   
